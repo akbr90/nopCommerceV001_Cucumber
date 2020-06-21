@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="89.432">
+    <testcase classname="Customers" name="Add a new Customer" time="59.058">
+        <system-out>
+            <![CDATA[Given User Launch Chrome Browser............................................passed
+When User opens URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enter email as "admin@yourstore.com" and password as "admin".......passed
+And Click on Login..........................................................passed
+Then User can view Dashboard................................................passed
+When User Click on customers menu...........................................passed
+And click on customers Menu Item............................................passed
+And click on Add new button.................................................passed
+Then User can view Add new customer page....................................passed
+When User enter customer info...............................................passed
+And click on Save button....................................................passed
+Then User can view confirmation message "The new user has been added successfully.".passed
+And Close Browser...........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="Successful login with valid credentials" time="29.927">
+        <system-out>
+            <![CDATA[Given User Launch Chrome Browser............................................passed
+When User opens URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enter email as "admin@yourstore.com" and password as "admin".......passed
+And Click on Login..........................................................passed
+Then Page title should be "Dashboard / nopCommerce administration"..........passed
+When User Click on Log out Link.............................................passed
+Then Page title should be "Your store. Login"...............................passed
+And Close Browser...........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
